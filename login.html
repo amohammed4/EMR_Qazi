@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico"/>
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+    <link type="text/css" href="css/login_page.css" rel="stylesheet"/>
+    <title>Login Page</title>
+
+ </head>
+ <body background="https://www.ebizuniverse.com/emrbackcut.jpg"> <!-- Background for page
+
+ <!--<div class="login-form">-->
+ 	<div class="wrapper">
+  <img src="https://www.ebizuniverse.com/emrlogo.png" alt="EMR Logo" style="width:204px;height:128px;">		<h1> <font face="verdana" color="green">Electronic Medical Record System</font> </h1>
+	    <form class ="form-signin" action="/say_hello" method="POST">
+	    	<h2 class="form-signin-heading">Please login</h2>
+	      <div class="form-group"> <!--Input username-->
+	        <label for="username">User Name: <input class="form-control" type="text" name="username"
+	            id="username" placeholder="Username" required autofocus></label>
+	      </div>
+	      <div class="form-group">
+	        <label for="password">Password: <input class="form-control" type="password"
+	            name="password" id="password" placeholder="Password" required></label>
+	      </div>
+	      <div class="form-group">
+	        <label for="loginas">Login as:
+	        	<select class="form-control" name="loginas" id="loginas"> <!-- Dropbox to choose -->
+				  <option disabled selected></option>
+				  <option value="patient">Patient</option>
+				  <option value="doctor">Doctor</option>
+				  <option value="pharmacist">Pharmacist</option>
+				</select></label>
+			      <div class="form-group">  <!-- Form For Login-->
+			      	        <input type="hidden" name="action" value="login">
+	        <input type="submit" value="Log in">  <!--Login Button-->	      </div>
+	      </div>
+	      <div class="form-group">
+	   
+	      </div>
+	    </form>
+	    <!-- Start of footer wrapper -->
+<div id="footer_wrapper">
+
+	<!-- Start of footer -->
+    <div class="footer">
+    
+    	<!-- Start of copyright -->
+        <div class="copyright">
+        <p align="right"> <a href="http://">Contact</a>  <a href="http://">Help</a> </p> <!-- Footer --> 
+        
+        </div><!-- End of copyright -->
+        
+
+            
+            </div><!-- End of tweets -->
+            
+
+            
+                                                        
+        
+        </div><!-- End of social section -->
+    
+    </div><!-- End of footer -->
+
+</div><!-- End of footer wrapper -->
+	</div>
+	
+ <!--</div>-->
+  </body>
+</html>

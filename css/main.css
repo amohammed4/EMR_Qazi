@@ -1,0 +1,55 @@
+html{
+   font-family:sans-serif;
+
+   }
+ body{margin:0}
+ a{background-color:transparent}a:active,a:hover{outline:0}
+ b,strong{font-weight:700}
+ h1{margin:.67em 0;font-size:2em}
+ mark{color:#000;background:#ff0}
+ small{font-size:80%}
+
+
+.form-group{
+    margin-right:10px;
+    margin-left:10px;
+    display:inline-block;
+     margin-bottom:0;
+     vertical-align:middle;
+     height:74px;
+}
+
+
+
+ .form-control{
+
+ height:auto;
+ padding:6px 6px;
+ font-size:14px;
+ line-height:1.42857143;
+ color:#555;
+ background-color:#fff;
+ background-image:none;
+ border:1px solid #ccc;
+ border-radius:5px;
+ width:300px;
+  margin-top:10px;
+  margin-bottom:10px
+ }
+
+ #loginas{
+ height:35px;
+ width:312px;
+ }
+
+ input[type=submit] {
+    display: block;
+     margin-bottom: 20px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+     padding:200px;
+     width:100px;
+     height:10px;
+   }
+
+

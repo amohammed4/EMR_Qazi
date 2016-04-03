@@ -1,0 +1,100 @@
+<head>
+
+<title>Patient Info</title>
+<link href="css/physician/tab-content/template1/tabcontent.css" rel="stylesheet" type="text/css" />
+<script src="tab-content/tabcontent.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link href="css/tabs.css" rel="stylesheet" type="text/css" />
+<script src="js/tabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+document.getElementById('view2').addEventListener("click", function(event) {
+    (function(event) {
+        alert(this);
+    }).call(document.getElementById('view2'), event);
+});
+    $(document).ready(function() {
+        $('div.precond').click(function() {
+            // run an AJAX get request to the route you setup above...
+            // respect the cross-domain policy by using the same domain
+            // you used to access your index.html file!
+            alert('function');
+            $.get('/patient-pre-conditions?'+$('#SSN'), function(list) {
+              alert('function');
+                $('div.precond').html(list); // show the list
+            });
+        });
+    });
+    </script>
+</head>
+
+<body style="background:#F6F9FC; font-family:Arial;">
+
+<div align="center">
+    <br/>
+    <br/>
+    <label id="labelTop">Patient's Name: </label>
+    <b><label id="pName"></label></b>
+</div>
+
+
+
+
+
+<div style="width: 100%; margin: 0 auto; padding: 60px 0 40px;">
+	<ul class="tabs" data-persist="true">
+    <li class="selected"><a href="#view1">Demographics</a></li>
+    <li><a href="#view2">Pre-existing Conditions</a></li>
+    <li><a href="#view3">Allergies</a></li>
+    <li><a href="#view4">Medications</a></li>
+    <li><a href="#view5">Immunizations</a></li>
+    <li><a href="#view6">Current Status</a></li>
+    <li><a href="#view7">Visits</a></li>
+    <li><a href="#view8">Prescriptions</a></li>
+    <li><a href="#view9">Notes</a></li>
+</ul>
+
+
+
+<div class="tabcontents">
+    <div id="view1">
+      {{{_sections.demographics}}}
+    </div>
+
+    <div id="view2" class="precond">
+
+      {{{_sections.preconditions}}}
+    </div>
+
+    <div id="view3">
+
+    </div>
+    <div id="view4">
+
+    </div>
+    <div id="view5">
+
+    </div>
+    <div id="view6">
+
+    </div>
+
+    <div id="view7">
+
+    </div>
+
+
+    <div id="view9">
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

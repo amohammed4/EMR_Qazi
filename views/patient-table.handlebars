@@ -1,0 +1,34 @@
+<div align="center">
+  <script type="text/javascript">
+  	function getPatientSSN(row){
+  		var ssn = row.cells[0].innerHTML;	//get SSN
+  		window.location.href = "/patient-details?ssn=" + ssn;
+  		//alert(x);
+  	}
+  </script>
+<table id="patientTable" name="patientTable" border="1" cellpadding="3" cellspacing="0">
+	<caption><p><u>:: Patient's List ::</u></p></caption>
+
+	<thead>
+    	<tr>
+    		<th style="width:100px">SSN</th>
+      		<th style="width:100px">First Name</th>
+      		<th style="width:120px">Last Name</th>
+      		<th style="width:120px">Birth Date</th>
+      		<th style="width:60px">Gender</th>
+      		<th style="width:300px">Current Status</th>
+    	</tr>
+  	</thead>
+    {{#each result}}
+		<tr onclick="getPatientSSN(this)" style="cursor:pointer">
+
+			<td style="width:100px">{{SSN}}</td>
+			<td style="width:100px">{{First_Name}}</td>
+			<td style="width:120px">{{Last_Name}}</td>
+			<td style="width:120px">{{Birth_Date}}</td>
+			<td style="width:60px">{{Gender}}</td>
+			<td style="width:300px">{{Current_Status}}</td>
+		</tr>
+    {{/each}}
+</table>
+</div>
